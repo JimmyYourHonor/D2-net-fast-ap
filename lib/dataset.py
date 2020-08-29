@@ -63,7 +63,7 @@ class MegaDepthDataset(Dataset):
             print('Building a new training dataset...')
         for scene in tqdm(self.scenes, total=len(self.scenes)):
             scene_info_path = os.path.join(
-                self.scene_info_path, '%s.npz' % scene
+                self.scene_info_path, '%s.0.npz' % scene
             )
             if not os.path.exists(scene_info_path):
                 continue
